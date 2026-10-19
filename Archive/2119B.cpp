@@ -11,7 +11,7 @@ void solve() {
     ll num;
     cin >> num;
     s += num;
-    m  = max(m, num);
+    m = max(m, num);
   }
   ll d = (px - qx) * (px - qx) + (py - qy) * (py - qy);
   ll c = (m * 2 - s) * (m * 2 - s);

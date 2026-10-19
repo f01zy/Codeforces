@@ -11,7 +11,7 @@ void solve() {
     p = max(p, num);
     q = min(q, num);
   }
-  int t   = p - q;
+  int t = p - q;
   int ans = t % 2 ? t / 2 + 1 : t / 2;
   cout << ans << endl;
 }

@@ -5,10 +5,10 @@ void solve() {
   cin >> s >> k >> m;
   int ss = s, sk = k, sm = m;
   while (sm > 0) {
-    int t  = min(sk, sm);
-    sk    -= t;
-    sm    -= t;
-    ss    -= t;
+    int t = min(sk, sm);
+    sk -= t;
+    sm -= t;
+    ss -= t;
     if (ss < 0) ss = 0;
     if (sk == 0) {
       ss = s - ss;
@@ -16,7 +16,7 @@ void solve() {
     }
     if (sk < ss && sk < sm) {
       int a = ss / sk, b = sm / sk;
-      ss  = min(a, b) % 2 ? sk : ss;
+      ss = min(a, b) % 2 ? sk : ss;
       sm -= sk * min(a, b);
     }
   }

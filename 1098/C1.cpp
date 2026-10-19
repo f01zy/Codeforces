@@ -18,7 +18,7 @@ ll process(ll a, vector<ll> &d, ll curr, ll l, ll m) {
     ll num = d[i];
     if (!curr && !num) continue;
     ll next = curr * 10 + num;
-    ans     = min(ans, process(a, d, next, l, m + 1));
+    ans = min(ans, process(a, d, next, l, m + 1));
   }
   return ans;
 }

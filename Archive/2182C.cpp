@@ -2,7 +2,7 @@
 using namespace std;
 using ll = long long;
 ll process(vector<ll> &a, vector<ll> &b) {
-  ll n   = a.size();
+  ll n = a.size();
   ll ans = 0;
   for (ll i = 0; i < n; i++) {
     bool ok = true;

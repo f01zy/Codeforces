@@ -19,8 +19,8 @@ void solve() {
     cout << 0 << endl;
     return;
   }
-  ll t   = d / p[n - 1];
-  ll s   = (k - t) * p[n - 1];
+  ll t = d / p[n - 1];
+  ll s = (k - t) * p[n - 1];
   ll ans = t * n;
   for (int i = 0; i < n; i++) {
     if (s < x) break;

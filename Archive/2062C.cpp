@@ -17,7 +17,7 @@ void solve() {
     }
     for (ll i = n - 1; i >= 1; i--) {
       a[i] -= a[i - 1];
-      c    += a[i];
+      c += a[i];
     }
     ans = max({ans, b, c});
     a.erase(a.begin());

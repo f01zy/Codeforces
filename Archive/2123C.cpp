@@ -24,8 +24,8 @@ int main() {
     }
     cout << 1;
     for (int j = 1; j < n - 1; j++) {
-      int num   = nums[j];
-      int left  = prefix[j - 1];
+      int num = nums[j];
+      int left = prefix[j - 1];
       int right = suffix[j + 1];
       cout << ((left < num && right > num) ? 0 : 1);
     }

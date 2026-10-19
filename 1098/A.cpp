@@ -12,7 +12,7 @@ void solve() {
     if (i == 1) b++;
     if (i == 2) c++;
   }
-  ll t   = min(b, c);
+  ll t = min(b, c);
   ll ans = a + t + (b - t) / 3 + (c - t) / 3;
   cout << ans << endl;
 }

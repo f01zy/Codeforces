@@ -21,7 +21,7 @@ void solve() {
     cin >> num;
     b += num;
   }
-  int d    = a - b;
+  int d = a - b;
   int diff = n - k;
   if (!diff || diff >= 2) {
     for (int i = 0; i < m; i++) {

@@ -18,7 +18,7 @@ void solve() {
     if (d) l++;
     if (!d || i == n - 1) {
       ans += (l * (l + 1)) / 2;
-      l    = 0;
+      l = 0;
     }
   }
   cout << ans << endl;

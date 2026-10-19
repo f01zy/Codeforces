@@ -17,7 +17,7 @@ void solve() {
   ll s = 0, m = 0;
   for (int i = 0; i < n; i++) {
     s += b[i];
-    m  = max(m, a[i]);
+    m = max(m, a[i]);
   }
   ll ans = m + s;
   cout << ans << endl;

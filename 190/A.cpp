@@ -8,10 +8,10 @@ void solve() {
     ll ans = n * a;
     cout << ans << endl;
   } else {
-    ll count  = n / 3;
-    ll ans    = count * b;
-    n        %= 3;
-    ans      += min(b, n * a);
+    ll count = n / 3;
+    ll ans = count * b;
+    n %= 3;
+    ans += min(b, n * a);
     cout << ans << endl;
   }
 }

@@ -4,7 +4,7 @@ int sum(long long x) {
   int ans = 0;
   while (x) {
     ans += x % 10;
-    x   /= 10;
+    x /= 10;
   }
   return ans;
 }
@@ -33,9 +33,9 @@ void solve() {
     for (int j = 0; j < l; j++) {
       if (!c[j] && (i == -1 || getDigitByIndex(x, i) < getDigitByIndex(x, j))) i = j;
     }
-    c[i]   = true;
-    int d  = getDigitByIndex(x, i);
-    s     -= i == l - 1 ? d - 1 : d;
+    c[i] = true;
+    int d = getDigitByIndex(x, i);
+    s -= i == l - 1 ? d - 1 : d;
     ans++;
   }
   cout << ans << endl;

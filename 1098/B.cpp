@@ -8,7 +8,7 @@ void solve() {
     cout << 1 << endl;
     return;
   }
-  ll d   = min(abs(x1 - x2), n - abs(x1 - x2));
+  ll d = min(abs(x1 - x2), n - abs(x1 - x2));
   ll ans = k + d;
   cout << ans << endl;
 }

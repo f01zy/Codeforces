@@ -27,9 +27,9 @@ void solve() {
         ans += c[i];
         continue;
       }
-      ll d  = min(p, (c[i] - 2) / 2);
-      p    -= d;
-      ans  += c[i] + d;
+      ll d = min(p, (c[i] - 2) / 2);
+      p -= d;
+      ans += c[i] + d;
     }
   }
   if (ans < 3) ans = 0;
